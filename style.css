@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+}
+.container {
+  margin: auto;
+  mix-blend-mode: difference;
+  color: #fff;
+  width: fit-content;
+}
+.container .header {
+  width: fit-content;
+  margin: 1rem auto;
+}
+.body {
+  border: 1px solid rgba(245, 245, 245, 0.527);
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.534);
+  padding: 10px;
+}
+.body input {
+  padding: 8px 5px;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.9s;
+}
+
+.body input:focus {
+  border: 1px solid rgb(47, 255, 99);
+}
+
+.body button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #49db50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.body .list {
+  margin-top: 2rem;
+}
+.body .list ol li {
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-top: 5px;
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+.body .list ol li span {
+  cursor: pointer;
+}
+
+.done {
+  color: rgb(128 128 128 / 60%) !important;
+}
+
+.vibrate {
+  animation: vibration 0.5s linear 0s 1 normal forwards;
+}
+@keyframes vibration {
+  0%,
+  10% {
+    margin-right: 2rem;
+  }
+  30% {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+  50% {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+  100% {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
